@@ -26,6 +26,7 @@ return {
         "prisma",
         "markdown",
         "markdown_inline",
+        "latex",
         "svelte",
         "graphql",
         "bash",
