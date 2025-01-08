@@ -19,9 +19,6 @@ return {
     "nvim-treesitter/nvim-treesitter",
     -- see below for full list of optional dependencies 👇
   },
-  config = function()
-    local keymap = vim.keymap
-  end,
   opts = {
     workspaces = {
       {
@@ -53,5 +50,6 @@ return {
       -- vim.ui.open(url) -- need Neovim 0.10.0+
     end,
     -- see below for full list of options 👇
+    ui = { enable = false },
   },
 }

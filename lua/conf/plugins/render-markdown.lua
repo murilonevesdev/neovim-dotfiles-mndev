@@ -87,6 +87,7 @@ return {
       callout = {
         bible = { raw = "[!bible]", rendered = " Bible", highlight = "RenderMarkdownInfo" },
       },
+      pipe_table = { preset = "round", cell = "trimmed" },
     })
   end,
 }
