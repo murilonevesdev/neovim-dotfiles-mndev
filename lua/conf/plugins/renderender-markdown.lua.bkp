@@ -10,20 +10,15 @@ return {
     require("render-markdown").setup({
       bullet = {
         enabled = true,
-        icons = { "●", "○", "◆", "◇" },
+        icons = { "● ", "○", "◆", "◇" },
+        right_pad = 1,
       },
       checkbox = {
         custom = {
-          tilde = {
-            raw = "[~]",
-            rendered = "",
-            highlight = "DiagnosticOk",
-            scope_highlight = nil,
-          },
           checked = {
-            raw = "[x]",
-            rendered = "󰄵",
-            highlight = "ObsidianDone",
+            raw = "[~]",
+            rendered = "󰞑",
+            highlight = "RenderMarkdownOk",
             scope_highlight = nil,
           },
           canceled = {
@@ -35,13 +30,13 @@ return {
           bookmark = {
             raw = "[b]",
             rendered = "",
-            highlight = "ObsidianTodo",
+            highlight = "DiagnosticError",
             scope_highlight = nil,
           },
           location = {
             raw = "[l]",
             rendered = "",
-            highlight = "ObsidianExtLinkIcon",
+            highlight = "DiagnosticOk",
             scope_highlight = nil,
           },
           star = {
@@ -53,13 +48,13 @@ return {
           important = {
             raw = "[!]",
             rendered = "",
-            highlight = "DiagnosticWarn",
+            highlight = "DIagnosticWarn",
             scope_highlight = nil,
           },
           question = {
             raw = "[?]",
             rendered = "󰠗",
-            highlight = "DiagnosticOk",
+            highlight = "DiagnosticError",
             scope_highlight = nil,
           },
           scheduling = {
@@ -71,7 +66,7 @@ return {
           forwarded = {
             raw = "[>]",
             rendered = "",
-            highlight = "ObsidianRightArrow",
+            highlight = "DiagnosticError",
             scope_highlight = nil,
           },
           information = {
