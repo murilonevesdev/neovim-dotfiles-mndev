@@ -11,6 +11,7 @@ return {
       bullet = {
         enabled = true,
         icons = { "●", "○", "◆", "◇" },
+        right_pad = 1,
       },
       checkbox = {
         custom = {
