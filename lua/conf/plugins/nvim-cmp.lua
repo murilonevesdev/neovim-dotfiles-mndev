@@ -4,6 +4,7 @@ return {
   dependencies = {
     "hrsh7th/cmp-buffer", -- source for text in buffer
     "hrsh7th/cmp-path", -- source for file system paths
+    "tailwind-tools",
     {
       "L3MON4D3/LuaSnip",
       -- follow latest release.
@@ -45,7 +46,7 @@ return {
       }),
       -- sources for autocompletion
       sources = cmp.config.sources({
-        { name = "nvim_lsp" }, -- snippets
+                { name = "nvim_lsp"},
         { name = "luasnip" }, -- snippets
         { name = "buffer" }, -- text within current buffer
         { name = "path" }, -- file system paths
@@ -56,6 +57,7 @@ return {
       ---@diagnostic disable-next-line: missing-fields
       formatting = {
         format = lspkind.cmp_format({
+          before = require("tailwind-tools.cmp").lspkind_format,
           maxwidth = 50,
           ellipsis_char = "...",
         }),
