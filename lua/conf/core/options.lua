@@ -19,9 +19,9 @@ opt.sidescrolloff = 8 -- number of columns to keep to the left/right of cursor
 
 -- Tab spacing/behavior
 opt.expandtab = true -- convert tabs to spaces
-opt.shiftwidth = 4 -- number of spaces inserted for each indentation level
-opt.tabstop = 4 -- number of spaces inserted for tab character
-opt.softtabstop = 4 -- number of spaces inserted for <Tab> key
+opt.shiftwidth = 2 -- number of spaces inserted for each indentation level
+opt.tabstop = 2 -- number of spaces inserted for tab character
+opt.softtabstop = 2 -- number of spaces inserted for <Tab> key
 opt.smartindent = true -- enable smart indentation
 opt.breakindent = true -- enable line breaking indentation
 
